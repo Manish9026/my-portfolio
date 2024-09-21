@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Title from '../layouts/Title';
 import ContactLeft from './ContactLeft';
+import { url } from '../../utils/url';
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -10,7 +11,14 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
-
+  const request=new Request(`${url}/user/post/message`,{
+    body:JSON.stringify({userName:username,userEmail:email,mobileNo:phoneNumber,subject,message}),
+    method:"POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  
+  })
   // ========== Email Validation start here ==============
   const emailValidation = () => {
     return String(email)
@@ -19,7 +27,7 @@ const Contact = () => {
   };
   // ========== Email Validation end here ================
 
-  const handleSend = (e) => {
+  const handleSend = async(e) => {
     e.preventDefault();
     if (username === "") {
       setErrMsg("Username is required!");
@@ -34,8 +42,10 @@ const Contact = () => {
     } else if (message === "") {
       setErrMsg("Message is required!");
     } else {
+
+      const res=await (await fetch(request)).json()
       setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
+        res?.message
       );
       setErrMsg("");
       setUsername("");
