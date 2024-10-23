@@ -1,4 +1,4 @@
-import { project1, project2,project3 ,project4} from "../assets/projectImages/projectImages";
+import { project1, project2,project3 ,project4, project5} from "../assets/projectImages/projectImages";
 
 
 export const navLinksdata = [
@@ -178,6 +178,8 @@ export const projectData=[
     title:"social media (rapid blog)",
     des:"Rapid-blog is a social media platform designed for meaningful connections and vibrant communities. Users can create profiles, share posts, join groups, and engage with content.That is oraginally build with [react,mongoDB,express js, Node js,]",
     src:project1,
+    mediaType:"image",
+
     gitLink:"https://github.com/Manish9026/Blog-app",
     liveUrl:"https://rapid-blog.vercel.app/"
   },
@@ -185,11 +187,15 @@ export const projectData=[
     title:"e-commerce (shop india)",
     des:"ShopIndia is a modern e-commerce platform designed to provide a seamless shopping experience. It allows users to browse products, make purchases, and track orders effortlessly.That is oraginally build with [react,mongoDB,express js, Node js]",
     src:project2,
+    mediaType:"image",
+
     gitLink:"https://github.com/Manish9026/shopIndia",
     liveUrl:"https://shopindia.vercel.app/"
   },{
     title:"service (ENG-MATES)",
     des:"",
+    mediaType:"image",
+
     src:project3,
     gitLink:"https://github.com/Manish9026/ENG-MATES",
     liveUrl:"https://eng-mates.vercel.app/"
@@ -198,8 +204,18 @@ export const projectData=[
     title:"Booking web app",
     des:"",
     src:project4,
+    mediaType:"image",
+
     gitLink:"https://github.com/Manish9026/booking-app",
     liveUrl:"https://booking-app-self-mu.vercel.app/"
+  },
+  {
+    title:"Journeylog (traveling Allowance)",
+    des:"Journeylog is a type of Travel Reporting & Allowance Management web App! 🚀 \n it's provides multiple features like \n Add, update, and delete travel records across different companies \n Manage payment records efficiently\n Print statements in JPG and PDF formats\nGet a clear overview of travel costs, remaining balances, and wallet balance That is oraginally build with [react,mongoDB,express js, Node js,]",
+    src:project5,
+    mediaType:"video",
+    gitLink:"https://github.com/Manish9026/Blog-app",
+    liveUrl:"https://rapid-blog.vercel.app/"
   }
 
   

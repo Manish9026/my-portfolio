@@ -26,6 +26,7 @@ const Projects = () => {
               src={card.src}
               gitLink={card.gitLink}
               liveUrl={card.liveUrl}
+              mediaType={card?.mediaType}
               />
             )
           })
