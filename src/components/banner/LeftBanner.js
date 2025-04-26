@@ -3,6 +3,8 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
 import resume from '../../assets/resume.pdf'
 import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { socialLinks } from '../../constants';
+import { FiGithub } from 'react-icons/fi';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
@@ -37,15 +39,15 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-            <span className="bannerIcon">
+            <a href={socialLinks['github'].url}  target="_blank" className="bannerIcon" title='Github'>
+            <FiGithub />
+            </a>
+            <a href={socialLinks['twitter'].url}  target="_blank" className="bannerIcon" title='twitter'>
               <FaTwitter />
-            </span>
-            <span className="bannerIcon">
+            </a>
+            <a  href={socialLinks['linkedIn'].url}  className="bannerIcon" title='linkedIn' target='_blank'>
               <FaLinkedinIn />
-            </span>
+            </a>
           </div>
         </div>
         <div>

@@ -3,5 +3,6 @@ export const project2 =require("./shopIndia.png")
 export const project3 =require("./project3.png")
 export const project4 =require("./project4.png")
 export const project5=require("./journeylog.mp4")
-
+export const project6=require('./digital-sell.png');
+export const project7=require('./3d-viewer.png')
 

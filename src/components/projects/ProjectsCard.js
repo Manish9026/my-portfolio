@@ -6,13 +6,13 @@ const  ProjectsCard = ({ title, des, src,gitLink,liveUrl,mediaType }) => {
 
   // const navigate = useNavigate();
   return (
-    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000">
-      <div className="w-full h-[80%] overflow-hidden rounded-lg">
+    <div className="w-full p-4 xl:px-8 h-auto xl:py-5 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-secondary group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900  hover:-translate-y-2 transition-all ease duration-700 max-w-[350px]">
+      <div className="w-full  aspect-video overflow-hidden rounded-lg">
        {mediaType=="image"? <img
-          className="w-full h-60 object-cover group-hover:scale-110 duration-300 cursor-pointer object-fill"
+          className="w-full h-60 object-fill aspect-video duration-300 cursor-pointer "
           src={src}
           alt="src"
-        />:<video src={src}  autoPlay ></video>}
+        />:<video src={src} className='w-full h-full aspect-video' autoPlay ></video>}
       </div>
       <div className="w-full mt-5 flex flex-col  gap-6">
         <div>
@@ -31,7 +31,7 @@ const  ProjectsCard = ({ title, des, src,gitLink,liveUrl,mediaType }) => {
               </span>
             </div>
           </div>
-          <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300">
+          <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300 text-justify">
             {des}
           </p>
         </div>

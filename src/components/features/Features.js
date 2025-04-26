@@ -18,9 +18,9 @@ const Features = () => {
   return (
     <section
       id="features"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full primary-p border-b-[1px] border-b-black"
     >
-      <Title title="Features" des="What I Do" />
+      <Title title="Features" des="What I Do" className={"pt-20"} />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
         {
           cardDetail.map((card, index) => {

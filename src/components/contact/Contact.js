@@ -55,26 +55,27 @@ const Contact = () => {
       setMessage("");
     }
   };
+  let FieldGradient=""
   return (
     <section
       id="contact"
-      className="w-full py-20 border-b-[1px] border-b-black"
+      className="w-full primary-p border-b-[1px] border-b-black"
     >
-      <div className="flex justify-center items-center text-center">
+      <div className="flex pt-10 justify-center items-center text-center">
         <Title title="CONTACT" des="Contact With Me" />
       </div>
       <div className="w-full">
-        <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
+        <div className="w-full h-auto flex gap-4 flex-col lgl:flex-row justify-between">
           <ContactLeft />
-          <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
+          <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-b from-cardOne to-cardTwo flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
             <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
               {errMsg && (
-                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
+                <p className="py-3  shadow-shadowOne rounded-md text-center text-orange-500 shadow-red-500 text-base tracking-wide animate-bounce">
                   {errMsg}
                 </p>
               )}
               {successMsg && (
-                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-green-500 text-base tracking-wide animate-bounce">
+                <p className="py-3 rounded-md shadow-shadowOne text-center shadow-green-500 capitalize text-green-500 text-base tracking-wide animate-bounce">
                   {successMsg}
                 </p>
               )}

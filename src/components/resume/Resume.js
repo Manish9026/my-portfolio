@@ -11,8 +11,8 @@ const Resume = () => {
    const [experienceData, setExperienceData] = useState(false);
    const [achievementData, setAchievementData] = useState(false);
   return (
-    <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
-      <div className="flex justify-center items-center text-center">
+    <section id="profile" className="w-full primary-p  border-b-[1px] border-b-black">
+      <div className="flex justify-center pt-10 items-center text-center">
         <Title title="1+ YEARS OF EXPERIENCE" des="My Resume" />
       </div>
       <div>
@@ -30,7 +30,7 @@ const Resume = () => {
                 : "border-transparent"
             } resumeLi`}
           >
-            Education
+           🎓 Education
           </li>
           <li
             onClick={() =>
@@ -43,7 +43,7 @@ const Resume = () => {
               skillData ? "border-designColor rounded-lg" : "border-transparent"
             } resumeLi`}
           >
-            Professional Skills
+           🪄 Professional Skills
           </li>
           <li
             onClick={() =>
@@ -58,7 +58,7 @@ const Resume = () => {
                 : "border-transparent"
             } resumeLi`}
           >
-            Experience
+           🚀 Experience
           </li>
           <li
             onClick={() =>
@@ -68,12 +68,12 @@ const Resume = () => {
               setAchievementData(true)
             }
             className={`${
-              achievementData
+               achievementData
                 ? "border-designColor rounded-lg"
                 : "border-transparent"
             } resumeLi`}
           >
-            Achievements
+          🎯 Achievements
           </li>
         </ul>
       </div>
