@@ -1,6 +1,8 @@
 import React from 'react'
 import LeftBanner from './LeftBanner';
 import RightBanner from './RightBanner';
+// import AnimatedGridBox from './GridCard';
+import GlowingGridTracer from './GridCard';
 const Banner = () => {
   return (
     <section
@@ -9,6 +11,7 @@ const Banner = () => {
     >
       <LeftBanner />
      <RightBanner />
+     {/* <GlowingGridTracer/> */}
     </section>
   );
 }

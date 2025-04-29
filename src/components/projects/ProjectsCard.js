@@ -31,7 +31,7 @@ const  ProjectsCard = ({ title, des, src,gitLink,liveUrl,mediaType }) => {
               </span>
             </div>
           </div>
-          <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300 text-justify">
+          <p className="text-sm py-2 mt-3 hover:text-gray-100 duration-300 break-normal">
             {des}
           </p>
         </div>
