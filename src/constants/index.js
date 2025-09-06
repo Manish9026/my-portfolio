@@ -186,8 +186,7 @@ export const skillData=[
 }
 ]
 
-<<<<<<< HEAD
-=======
+
 export const experienceData = [
   {
     title: "Internship",
@@ -226,7 +225,6 @@ export const experienceData = [
 ];
 
 
->>>>>>> 93f0500 (Add projectData and scroll-to-hash feature)
 export const testimonialData=[{
   nationality:"india",
   name:"lucky pandey",
@@ -246,76 +244,76 @@ export const testimonialData=[{
   des:"The publication web app has exceeded my expectations in terms of design and usability. The sleek, intuitive interface makes content management seamless, allowing us to easily publish and organize articles. The responsive design ensures our readers have a great experience on both desktop and mobile. As a founder, I appreciate how quickly I can manage posts and track performance. There’s still room for improvement with advanced analytics and some UX refinements, but overall, it’s an outstanding platform that has streamlined our publishing process.",rating:5,
 }]
 
-<<<<<<< HEAD
-export const projectData=[
-  {
-    title:"social media (rapid blog)",
-    des:"Rapid-blog is a social media platform designed for meaningful connections and vibrant communities. Users can create profiles, share posts, join groups, and engage with content.That is oraginally build with [react,mongoDB,express js, Node js,]",
-    src:project1,
-    mediaType:"image",
 
-    gitLink:"https://github.com/Manish9026/Blog-app",
-    liveUrl:"https://rapid-blog.vercel.app/"
-  },
-  {
-    title:"Digital Product Sell",
-    des:"An all-in-one platform to sell digital products like eBooks, videos, designs, and files. Upload, manage, and securely deliver digital content to buyers with ease. Features include instant downloads, secure access, responsive design, and smooth payment integration — perfect for creators, freelancers, and businesses to grow their online store.",
-    src:project6,
-    mediaType:"image",
+// export const projectData=[
+//   {
+//     title:"social media (rapid blog)",
+//     des:"Rapid-blog is a social media platform designed for meaningful connections and vibrant communities. Users can create profiles, share posts, join groups, and engage with content.That is oraginally build with [react,mongoDB,express js, Node js,]",
+//     src:project1,
+//     mediaType:"image",
 
-    gitLink:"https://github.com/Manish9026/digital-sell-app",
-    liveUrl:"https://digital-sell.vercel.app/"
-  },
-  {
-    title:"Journeylog (traveling Allowance)",
-    des:"Journeylog is a type of Travel Reporting & Allowance Management web App! 🚀 \n it's provides multiple features like \n Add, update, and delete travel records across different companies \n Manage payment records efficiently\n Print statements in JPG and PDF formats\nGet a clear overview of travel costs, remaining balances, and wallet balance That is oraginally build with [react,mongoDB,express js, Node js,]",
-    src:project5,
-    mediaType:"video",
-    gitLink:"https://github.com/Manish9026/Blog-app",
-    liveUrl:"https://rapid-blog.vercel.app/"
-  }
-  ,
-  {
-    title:"e-commerce (shop india)",
-    des:"ShopIndia is a modern e-commerce platform designed to provide a seamless shopping experience. It allows users to browse products, make purchases, and track orders effortlessly.That is oraginally build with [react,mongoDB,express js, Node js]",
-    src:project2,
-    mediaType:"image",
+//     gitLink:"https://github.com/Manish9026/Blog-app",
+//     liveUrl:"https://rapid-blog.vercel.app/"
+//   },
+//   {
+//     title:"Digital Product Sell",
+//     des:"An all-in-one platform to sell digital products like eBooks, videos, designs, and files. Upload, manage, and securely deliver digital content to buyers with ease. Features include instant downloads, secure access, responsive design, and smooth payment integration — perfect for creators, freelancers, and businesses to grow their online store.",
+//     src:project6,
+//     mediaType:"image",
 
-    gitLink:"https://github.com/Manish9026/shopIndia",
-    liveUrl:"https://shopindia.vercel.app/"
-  },
-  {
-    title:"3D visualization App",
-    des:"A fast and interactive 3D model viewer that lets users upload, rotate, zoom, and explore 3D objects with ease. Supports popular formats like .glb, .gltf, and .obj, with smooth performance on all devices.",
-    src:project7,
-    mediaType:"image",
+//     gitLink:"https://github.com/Manish9026/digital-sell-app",
+//     liveUrl:"https://digital-sell.vercel.app/"
+//   },
+//   {
+//     title:"Journeylog (traveling Allowance)",
+//     des:"Journeylog is a type of Travel Reporting & Allowance Management web App! 🚀 \n it's provides multiple features like \n Add, update, and delete travel records across different companies \n Manage payment records efficiently\n Print statements in JPG and PDF formats\nGet a clear overview of travel costs, remaining balances, and wallet balance That is oraginally build with [react,mongoDB,express js, Node js,]",
+//     src:project5,
+//     mediaType:"video",
+//     gitLink:"https://github.com/Manish9026/Blog-app",
+//     liveUrl:"https://rapid-blog.vercel.app/"
+//   }
+//   ,
+//   {
+//     title:"e-commerce (shop india)",
+//     des:"ShopIndia is a modern e-commerce platform designed to provide a seamless shopping experience. It allows users to browse products, make purchases, and track orders effortlessly.That is oraginally build with [react,mongoDB,express js, Node js]",
+//     src:project2,
+//     mediaType:"image",
 
-    gitLink:"https://github.com/Manish9026/3D-Viewer",
-    liveUrl:"https://3-d-viewer-black.vercel.app/"
-  },
-  {
-    title:"service (ENG-MATES)",
-    des:"",
-    mediaType:"image",
+//     gitLink:"https://github.com/Manish9026/shopIndia",
+//     liveUrl:"https://shopindia.vercel.app/"
+//   },
+//   {
+//     title:"3D visualization App",
+//     des:"A fast and interactive 3D model viewer that lets users upload, rotate, zoom, and explore 3D objects with ease. Supports popular formats like .glb, .gltf, and .obj, with smooth performance on all devices.",
+//     src:project7,
+//     mediaType:"image",
 
-    src:project3,
-    gitLink:"https://github.com/Manish9026/ENG-MATES",
-    liveUrl:"https://eng-mates.vercel.app/"
-  },
-  ,{
-    title:"Booking web app",
-    des:"",
-    src:project4,
-    mediaType:"image",
+//     gitLink:"https://github.com/Manish9026/3D-Viewer",
+//     liveUrl:"https://3-d-viewer-black.vercel.app/"
+//   },
+//   {
+//     title:"service (ENG-MATES)",
+//     des:"",
+//     mediaType:"image",
 
-    gitLink:"https://github.com/Manish9026/booking-app",
-    liveUrl:"https://booking-app-self-mu.vercel.app/"
-  },
+//     src:project3,
+//     gitLink:"https://github.com/Manish9026/ENG-MATES",
+//     liveUrl:"https://eng-mates.vercel.app/"
+//   },
+//   ,{
+//     title:"Booking web app",
+//     des:"",
+//     src:project4,
+//     mediaType:"image",
+
+//     gitLink:"https://github.com/Manish9026/booking-app",
+//     liveUrl:"https://booking-app-self-mu.vercel.app/"
+//   },
   
 
   
-]
-=======
+// ]
+
 // export const projectData=[
 //   {
 //     title:"social media (rapid blog)",
@@ -1193,4 +1191,4 @@ export const projectData = [
     gradient: "from-emerald-500 to-teal-600",
   },
 ];
->>>>>>> 93f0500 (Add projectData and scroll-to-hash feature)
+
