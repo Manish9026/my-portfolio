@@ -39,7 +39,7 @@ const Projects1 = () => {
 
 
 import { motion, useInView, AnimatePresence } from 'framer-motion';
-import { Laptop, ExternalLink, Github, Sparkles, Code2, Palette, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Laptop, ExternalLink, Github, Sparkles, Code2, Palette, ChevronLeft, ChevronRight, Briefcase } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -114,7 +114,16 @@ export function FilterNav({ categories, activeCategory, setActiveCategory }) {
   };
   // const scrollRef = useRef(null);
 
+const randomCategories = React.useMemo(() => {
+  const allCategory = categories.find((c) => c.name === "All");
+  const others = categories.filter((c) => c.name !== "All");
 
+  // shuffle & take 5
+  const shuffled = [...others].sort(() => 0.5 - Math.random());
+  const selected = shuffled.slice(0, 5);
+
+  return [allCategory, ...selected];
+}, [categories]);
 
   return (
     <>
@@ -196,17 +205,17 @@ export function FilterNav({ categories, activeCategory, setActiveCategory }) {
         </div>
       </motion.div>
       {/* 🟢 BOTTOM sticky nav - only visible when inside parent section */}
-      <AnimatePresence>
+     <AnimatePresence>
         {isInsideParent && (
           <motion.div
-            className="fixed bottom-0 left-0 w-full z-40 bg-slate-900/80 backdrop-blur-md border-t border-slate-700/50 shadow-lg"
+            className="fixed bottom-0 left-0  w-full z-40 bg-slate-900/80 backdrop-blur-md border-t border-slate-700/50 shadow-lg"
             initial={{ y: 100 }}
             animate={{ y: 0 }}
             exit={{ y: 100 }}
             transition={{ duration: 0.3 }}
           >
             <div className="flex justify-around max-w-5xl mx-auto px-4 py-3">
-              {categories.map((category) => {
+              {randomCategories.map((category) => {
                 const Icon = category.icon;
                 const isActive =
                   activeCategory === category.name ||
@@ -235,6 +244,7 @@ export function FilterNav({ categories, activeCategory, setActiveCategory }) {
           </motion.div>
         )}
       </AnimatePresence>
+
     </>
   );
 }
@@ -246,6 +256,7 @@ const Projects = () => {
   const categories = [
     { name: 'All', icon: Sparkles, color: 'from-purple-500 to-pink-500' },
     { name: 'Web App', icon: Code2, color: 'from-blue-500 to-cyan-500' },
+    { name: 'Freelance', icon: Briefcase, color: 'from-amber-500 to-yellow-500' },
     { name: 'E-Commerce', icon: Palette, color: 'from-green-500 to-emerald-500' },
     { name: 'Service', icon: Laptop, color: 'from-orange-500 to-red-500' },
     { name: '3D App', icon: Sparkles, color: 'from-violet-500 to-purple-500' },
@@ -349,7 +360,7 @@ const Projects = () => {
         <AnimatePresence mode="wait">
           <motion.div
             key={activeCategory}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto"
+            className="grid grid-cols-1 sml:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto"
             // className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto"
             variants={containerVariants}
             initial="hidden"
@@ -360,7 +371,7 @@ const Projects = () => {
 
 
               <ProjectCard
-                key={`${activeCategory}-${project.id}`}
+                key={`${activeCategory}-${project?.title}`}
                 project={project}
                 variants={itemVariants}
                 index={index}
@@ -385,7 +396,7 @@ const ProjectCard = ({ project, variants, index, techColors }) => {
     <motion.div
       ref={ref}
       variants={variants}
-      className="group relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 flex flex-col border border-slate-700/50 w-full max-w-sm mx-auto max-h-[600px] will-change-transform flex-1"
+      className="group relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 flex flex-col border border-slate-700/50 w-full max-w-sm mx-auto max-h-[600px] will-change-transform flex-1 "
       whileHover={{
         y: -15,
         scale: 1.02,

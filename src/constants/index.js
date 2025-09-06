@@ -1,4 +1,4 @@
-import { project1, project2,project3 ,project4, project5, project6, project7} from "../assets/projectImages/projectImages";
+import {   acadmic1, acadmic10, acadmic2, acadmic3, acadmic4, acadmic5, acadmic6, acadmic7, acadmic8, acadmic9, project1, project2,project3 ,project4, project5, project6, project7, projectOrgix, projectPariMedia} from "../assets/projectImages/projectImages";
 
 
 export const socialLinks={
@@ -245,350 +245,9 @@ export const testimonialData=[{
 }]
 
 
-// export const projectData=[
-//   {
-//     title:"social media (rapid blog)",
-//     des:"Rapid-blog is a social media platform designed for meaningful connections and vibrant communities. Users can create profiles, share posts, join groups, and engage with content.That is oraginally build with [react,mongoDB,express js, Node js,]",
-//     src:project1,
-//     mediaType:"image",
 
-//     gitLink:"https://github.com/Manish9026/Blog-app",
-//     liveUrl:"https://rapid-blog.vercel.app/"
-//   },
-//   {
-//     title:"Digital Product Sell",
-//     des:"An all-in-one platform to sell digital products like eBooks, videos, designs, and files. Upload, manage, and securely deliver digital content to buyers with ease. Features include instant downloads, secure access, responsive design, and smooth payment integration — perfect for creators, freelancers, and businesses to grow their online store.",
-//     src:project6,
-//     mediaType:"image",
 
-//     gitLink:"https://github.com/Manish9026/digital-sell-app",
-//     liveUrl:"https://digital-sell.vercel.app/"
-//   },
-//   {
-//     title:"Journeylog (traveling Allowance)",
-//     des:"Journeylog is a type of Travel Reporting & Allowance Management web App! 🚀 \n it's provides multiple features like \n Add, update, and delete travel records across different companies \n Manage payment records efficiently\n Print statements in JPG and PDF formats\nGet a clear overview of travel costs, remaining balances, and wallet balance That is oraginally build with [react,mongoDB,express js, Node js,]",
-//     src:project5,
-//     mediaType:"video",
-//     gitLink:"https://github.com/Manish9026/Blog-app",
-//     liveUrl:"https://rapid-blog.vercel.app/"
-//   }
-//   ,
-//   {
-//     title:"e-commerce (shop india)",
-//     des:"ShopIndia is a modern e-commerce platform designed to provide a seamless shopping experience. It allows users to browse products, make purchases, and track orders effortlessly.That is oraginally build with [react,mongoDB,express js, Node js]",
-//     src:project2,
-//     mediaType:"image",
-
-//     gitLink:"https://github.com/Manish9026/shopIndia",
-//     liveUrl:"https://shopindia.vercel.app/"
-//   },
-//   {
-//     title:"3D visualization App",
-//     des:"A fast and interactive 3D model viewer that lets users upload, rotate, zoom, and explore 3D objects with ease. Supports popular formats like .glb, .gltf, and .obj, with smooth performance on all devices.",
-//     src:project7,
-//     mediaType:"image",
-
-//     gitLink:"https://github.com/Manish9026/3D-Viewer",
-//     liveUrl:"https://3-d-viewer-black.vercel.app/"
-//   },
-//   {
-//     title:"service (ENG-MATES)",
-//     des:"",
-//     mediaType:"image",
-
-//     src:project3,
-//     gitLink:"https://github.com/Manish9026/ENG-MATES",
-//     liveUrl:"https://eng-mates.vercel.app/"
-//   },
-//   ,{
-//     title:"Booking web app",
-//     des:"",
-//     src:project4,
-//     mediaType:"image",
-
-//     gitLink:"https://github.com/Manish9026/booking-app",
-//     liveUrl:"https://booking-app-self-mu.vercel.app/"
-//   },
-  
-
-  
-// ]
-
-// export const projectData=[
-//   {
-//     title:"social media (rapid blog)",
-//     des:"Rapid-blog is a social media platform designed for meaningful connections and vibrant communities. Users can create profiles, share posts, join groups, and engage with content.That is oraginally build with [react,mongoDB,express js, Node js,]",
-//     src:project1,
-//     mediaType:"image",
-
-//     gitLink:"https://github.com/Manish9026/Blog-app",
-//     liveUrl:"https://rapid-blog.vercel.app/"
-//   },
-//   {
-//     title:"Digital Product Sell",
-//     des:"An all-in-one platform to sell digital products like eBooks, videos, designs, and files. Upload, manage, and securely deliver digital content to buyers with ease. Features include instant downloads, secure access, responsive design, and smooth payment integration — perfect for creators, freelancers, and businesses to grow their online store.",
-//     src:project6,
-//     mediaType:"image",
-
-//     gitLink:"https://github.com/Manish9026/digital-sell-app",
-//     liveUrl:"https://digital-sell.vercel.app/"
-//   },
-//   {
-//     title:"Journeylog (traveling Allowance)",
-//     des:"Journeylog is a type of Travel Reporting & Allowance Management web App! 🚀 \n it's provides multiple features like \n Add, update, and delete travel records across different companies \n Manage payment records efficiently\n Print statements in JPG and PDF formats\nGet a clear overview of travel costs, remaining balances, and wallet balance That is oraginally build with [react,mongoDB,express js, Node js,]",
-//     src:project5,
-//     mediaType:"video",
-//     gitLink:"https://github.com/Manish9026/Blog-app",
-//     liveUrl:"https://rapid-blog.vercel.app/"
-//   }
-//   ,
-//   {
-//     title:"e-commerce (shop india)",
-//     des:"ShopIndia is a modern e-commerce platform designed to provide a seamless shopping experience. It allows users to browse products, make purchases, and track orders effortlessly.That is oraginally build with [react,mongoDB,express js, Node js]",
-//     src:project2,
-//     mediaType:"image",
-
-//     gitLink:"https://github.com/Manish9026/shopIndia",
-//     liveUrl:"https://shopindia.vercel.app/"
-//   },
-//   {
-//     title:"3D visualization App",
-//     des:"A fast and interactive 3D model viewer that lets users upload, rotate, zoom, and explore 3D objects with ease. Supports popular formats like .glb, .gltf, and .obj, with smooth performance on all devices.",
-//     src:project7,
-//     mediaType:"image",
-
-//     gitLink:"https://github.com/Manish9026/3D-Viewer",
-//     liveUrl:"https://3-d-viewer-black.vercel.app/"
-//   },
-//   {
-//     title:"service (ENG-MATES)",
-//     des:"",
-//     mediaType:"image",
-
-//     src:project3,
-//     gitLink:"https://github.com/Manish9026/ENG-MATES",
-//     liveUrl:"https://eng-mates.vercel.app/"
-//   },
-//   ,{
-//     title:"Booking web app",
-//     des:"",
-//     src:project4,
-//     mediaType:"image",
-
-//     gitLink:"https://github.com/Manish9026/booking-app",
-//     liveUrl:"https://booking-app-self-mu.vercel.app/"
-//   },
-  
-
-  
-// ]
-
-// export const projectData = [
-//   {
-//     slug: "social-media-rapid-blog",
-//     title: "Social Media (Rapid Blog)",
-//     des: "Rapid-blog is a social media platform designed for meaningful connections and vibrant communities. Users can create profiles, share posts, join groups, and engage with content.",
-//     category: "Web App",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "mongodb", name: "MongoDB" },
-//       { slug: "express", name: "Express.js" },
-//       { slug: "nodejs", name: "Node.js" },
-//     ],
-//     features: [
-//       { slug: "auth-profiles", title: "User authentication & profiles" },
-//       { slug: "post-sharing", title: "Post creation & media sharing" },
-//       { slug: "groups", title: "Groups & communities" },
-//       { slug: "real-time", title: "Real-time engagement" },
-//     ],
-//     role: "Full-Stack Developer",
-//     duration: "Nov 2024 – Jan 2025",
-//     date: "2025-01-15",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" },
-//       { slug: "screen-1", type: "screenshot", url: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     gitLink: "https://github.com/Manish9026/Blog-app",
-//     liveUrl: "https://rapid-blog.vercel.app/",
-//     gradient: "from-blue-500 to-indigo-600",
-//   },
-//   {
-//     slug: "digital-product-sell",
-//     title: "Digital Product Sell",
-//     des: "An all-in-one platform to sell digital products like eBooks, videos, designs, and files. Upload, manage, and securely deliver content with instant downloads, responsive design, and smooth payment integration.",
-//     category: "Web App",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "mongodb", name: "MongoDB" },
-//       { slug: "express", name: "Express.js" },
-//       { slug: "nodejs", name: "Node.js" },
-//     ],
-//     features: [
-//       { slug: "uploads", title: "Digital product uploads & management" },
-//       { slug: "secure-delivery", title: "Secure file delivery" },
-//       { slug: "payments", title: "Payment gateway integration" },
-//       { slug: "responsive-ui", title: "Responsive UI/UX" },
-//     ],
-//     role: "Full-Stack Developer",
-//     duration: "Jan 2025 – Feb 2025",
-//     date: "2025-02-10",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg" },
-//       { slug: "screen-1", type: "screenshot", url: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     gitLink: "https://github.com/Manish9026/digital-sell-app",
-//     liveUrl: "https://digital-sell.vercel.app/",
-//     gradient: "from-green-500 to-teal-600",
-//   },
-//   {
-//     slug: "journeylog-travel-allowance",
-//     title: "Journeylog (Traveling Allowance)",
-//     des: "Journeylog is a travel reporting & allowance management web app with features to add/update/delete records, manage payments, and generate PDF/JPG statements.",
-//     category: "Web App",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "mongodb", name: "MongoDB" },
-//       { slug: "express", name: "Express.js" },
-//       { slug: "nodejs", name: "Node.js" },
-//     ],
-//     features: [
-//       { slug: "crud", title: "CRUD operations on travel reports" },
-//       { slug: "payments", title: "Payment management" },
-//       { slug: "filter-search", title: "Filter & search by date/company" },
-//       { slug: "export", title: "PDF/JPG export" },
-//     ],
-//     role: "Full-Stack Developer",
-//     duration: "Aug 2024 – Oct 2024",
-//     date: "2024-10-05",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "video",
-//     gitLink: "https://github.com/Manish9026/Blog-app",
-//     liveUrl: "https://rapid-blog.vercel.app/",
-//     gradient: "from-purple-500 to-pink-600",
-//   },
-//   {
-//     slug: "ecommerce-shop-india",
-//     title: "E-Commerce (Shop India)",
-//     des: "ShopIndia is a modern e-commerce platform offering a seamless shopping experience. Features include product browsing, order tracking, and secure checkout.",
-//     category: "E-Commerce",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "mongodb", name: "MongoDB" },
-//       { slug: "express", name: "Express.js" },
-//       { slug: "nodejs", name: "Node.js" },
-//     ],
-//     features: [
-//       { slug: "catalog", title: "Product catalog & search" },
-//       { slug: "cart-checkout", title: "Cart & checkout system" },
-//       { slug: "tracking", title: "Order tracking" },
-//       { slug: "payments", title: "Secure payment integration" },
-//     ],
-//     role: "Frontend Developer",
-//     duration: "Jul 2024 – Sep 2024",
-//     date: "2024-09-01",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     gitLink: "https://github.com/Manish9026/shopIndia",
-//     liveUrl: "https://shopindia.vercel.app/",
-//     gradient: "from-yellow-500 to-orange-600",
-//   },
-//   {
-//     slug: "3d-visualization-app",
-//     title: "3D Visualization App",
-//     des: "An interactive 3D model viewer that supports .glb, .gltf, and .obj formats. Allows upload, rotate, zoom, and explore 3D objects with smooth performance.",
-//     category: "3D App",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "threejs", name: "Three.js" },
-//       { slug: "mongodb", name: "MongoDB" },
-//     ],
-//     features: [
-//       { slug: "upload", title: "Upload & view 3D models" },
-//       { slug: "formats", title: "Support for .glb, .gltf, .obj formats" },
-//       { slug: "explore", title: "Rotate, zoom & explore" },
-//       { slug: "responsive", title: "Responsive rendering" },
-//     ],
-//     role: "Frontend Developer",
-//     duration: "Mar 2025 – Apr 2025",
-//     date: "2025-04-01",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     gitLink: "https://github.com/Manish9026/3D-Viewer",
-//     liveUrl: "https://3-d-viewer-black.vercel.app/",
-//     gradient: "from-cyan-500 to-blue-600",
-//   },
-//   {
-//     slug: "service-eng-mates",
-//     title: "Service (ENG-MATES)",
-//     des: "A responsive service website for an English Speaking Institute to manage courses, enrollments, and inquiries.",
-//     category: "Service",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "nodejs", name: "Node.js" },
-//     ],
-//     features: [
-//       { slug: "courses", title: "Course management" },
-//       { slug: "enrollments", title: "User enrollments" },
-//       { slug: "responsive", title: "Responsive design" },
-//       { slug: "inquiries", title: "Inquiry form integration" },
-//     ],
-//     role: "Frontend Developer",
-//     duration: "Jun 2024 – Jul 2024",
-//     date: "2024-07-10",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     gitLink: "https://github.com/Manish9026/ENG-MATES",
-//     liveUrl: "https://eng-mates.vercel.app/",
-//     gradient: "from-red-500 to-pink-600",
-//   },
-//   {
-//     slug: "booking-web-app",
-//     title: "Booking Web App",
-//     des: "A booking platform where users can reserve accommodations. Includes authentication, search, and payment features.",
-//     category: "Web App",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "mongodb", name: "MongoDB" },
-//       { slug: "express", name: "Express.js" },
-//       { slug: "nodejs", name: "Node.js" },
-//     ],
-//     features: [
-//       { slug: "booking", title: "Accommodation booking" },
-//       { slug: "auth", title: "User authentication" },
-//       { slug: "search", title: "Search & filter" },
-//       { slug: "payments", title: "Payment gateway integration" },
-//     ],
-//     role: "Full-Stack Developer",
-//     duration: "Sep 2024 – Nov 2024",
-//     date: "2024-11-01",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     gitLink: "https://github.com/Manish9026/booking-app",
-//     liveUrl: "https://booking-app-self-mu.vercel.app/",
-//     gradient: "from-emerald-500 to-teal-600",
-//   },
-// ];
-
-import { Clock, Calendar, Star,Code2,Zap,Palette, BarChart3, Smartphone, TrendingUp, Shield, Layers, } from "lucide-react";
+import { Clock, Calendar, Star,Code2,Zap,Palette, BarChart3, Smartphone, TrendingUp, Shield, Layers, FileText, Key, Users, Compass, MousePointer, Search, Lock, } from "lucide-react";
 import { IoLogoNodejs as Node } from "react-icons/io5";
 import { SiTypescript as TypeScript ,SiExpress,SiThreedotjs } from "react-icons/si";
 import { RiTailwindCssFill as Tailwind,} from "react-icons/ri";
@@ -597,6 +256,7 @@ import { DiMongodb } from "react-icons/di";
 import { RiNextjsFill ,RiJavascriptFill } from "react-icons/ri";
 import { TiHtml5  } from "react-icons/ti";
  import { IoLogoCss3 } from "react-icons/io";
+import { BsSpeedometer } from "react-icons/bs";
 // import { 
 //   Code2, Zap, Palette, Database, Globe, Layers, Cpu, Terminal, Cloud, Server, 
 //   Figma, Box, GitBranch, Docker, Html5, 
@@ -628,318 +288,6 @@ export const techStackList = {
 };
 
 
-
-// export const projectData = [
-//  {
-//     slug: "social-media-rapid-blog",
-//     title: "Social Media (Rapid Blog)",
-//     des: "Rapid-blog is a social media platform designed for meaningful connections and vibrant communities. Users can create profiles, share posts, join groups, and engage with content.",
-//     category: "Web App",
-//     techStack: [
-//       techStackList?.react,
-//       techStackList?.mongodb,
-//       techStackList?.express,
-//       techStackList?.node,
-//     ],
-//     features: [
-//     { title: 'Real-time data visualization', icon: BarChart3 },
-//     { title: 'Responsive design across all devices', icon: Smartphone },
-//     { title: 'Advanced analytics dashboard', icon: TrendingUp },
-//     { title: 'User authentication & security', icon: Shield },
-//     { title: 'Performance optimized', icon: Zap },
-//     { title: 'Modern UI/UX principles', icon: Layers },
-      
-//     ],
-//     role: "Full-Stack Developer",
-//     duration: "Nov 2024 – Jan 2025",
-//     date: "2025-01-15",
-//     media: [
-//       { slug: "cover", type: "image", url: project1 },
-//       { slug: "screen-1", type: "image", url: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     src:project1,
-//     timeline: [
-//       {
-//         icon: Clock,
-//         title: "TIMELINE",
-//         value: "3 months",
-//         subtitle: "Development Duration",
-//         color: "from-purple-500 to-purple-600",
-//         iconBg: "bg-purple-500",
-//         textColor: "text-purple-400",
-//         delay: 0,
-//       },
-//       {
-//         icon: Calendar,
-//         title: "RELEASE DATE",
-//         value: "October 2024",
-//         subtitle: "Project Completion",
-//         color: "from-blue-500 to-blue-600",
-//         iconBg: "bg-blue-500",
-//         textColor: "text-blue-400",
-//         delay: 200,
-//       },
-//       {
-//         icon: Star,
-//         title: "STATUS",
-//         value: "Completed",
-//         subtitle: "Current Phase",
-//         color: "from-green-500 to-green-600",
-//         iconBg: "bg-green-500",
-//         textColor: "text-green-400",
-//         delay: 400,
-//       },
-//     ],
-//     gitLink: "https://github.com/Manish9026/Blog-app",
-//     liveUrl: "https://rapid-blog.vercel.app/",
-//     gradient: "from-blue-500 to-indigo-600",
-//   },
-//   {
-//     slug: "digital-product-sell",
-//     title: "Digital Product Sell",
-//     des: "An all-in-one platform to sell digital products like eBooks, videos, designs, and files. Upload, manage, and securely deliver content with instant downloads, responsive design, and smooth payment integration.",
-//     category: "Web App",
-//      techStack: [
-//       techStackList?.react,
-//       techStackList?.mongodb,
-//       techStackList?.express,
-//       techStackList?.node,
-//     ],
-//     features: [
-//       { slug: "uploads", title: "Digital product uploads & management" },
-//       { slug: "secure-delivery", title: "Secure file delivery" },
-//       { slug: "payments", title: "Payment gateway integration" },
-//       { slug: "responsive-ui", title: "Responsive UI/UX" },
-//     ],
-//     role: "Full-Stack Developer",
-//     duration: "Jan 2025 – Feb 2025",
-//     date: "2025-02-10",
-//     media: [
-//       { slug: "cover", type: "image", url: project6 },
-//       { slug: "screen-1", type: "image", url: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     src:project6,
-//      timeline: [
-//       {
-//         icon: Clock,
-//         title: "TIMELINE",
-//         value: "3 months",
-//         subtitle: "Development Duration",
-//         color: "from-purple-500 to-purple-600",
-//         iconBg: "bg-purple-500",
-//         textColor: "text-purple-400",
-//         delay: 0,
-//       },
-//       {
-//         icon: Calendar,
-//         title: "RELEASE DATE",
-//         value: "October 2024",
-//         subtitle: "Project Completion",
-//         color: "from-blue-500 to-blue-600",
-//         iconBg: "bg-blue-500",
-//         textColor: "text-blue-400",
-//         delay: 200,
-//       },
-//       {
-//         icon: Star,
-//         title: "STATUS",
-//         value: "Completed",
-//         subtitle: "Current Phase",
-//         color: "from-green-500 to-green-600",
-//         iconBg: "bg-green-500",
-//         textColor: "text-green-400",
-//         delay: 400,
-//       },
-//     ],
-//     gitLink: "https://github.com/Manish9026/digital-sell-app",
-//     liveUrl: "https://digital-sell.vercel.app/",
-//     gradient: "from-green-500 to-teal-600",
-//   },
-//   {
-//     slug: "journeylog-travel-allowance",
-//     title: "Journeylog (Traveling Allowance)",
-//     des: "Journeylog is a travel reporting & allowance management web app with features to add/update/delete records, manage payments, and generate PDF/JPG statements.",
-//     category: "Web App",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "mongodb", name: "MongoDB" },
-//       { slug: "express", name: "Express.js" },
-//       { slug: "nodejs", name: "Node.js" },
-//     ],
-//     features: [
-//       { slug: "crud", title: "CRUD operations on travel reports" },
-//       { slug: "payments", title: "Payment management" },
-//       { slug: "filter-search", title: "Filter & search by date/company" },
-//       { slug: "export", title: "PDF/JPG export" },
-//     ],
-//     role: "Full-Stack Developer",
-//     duration: "Aug 2024 – Oct 2024",
-//     date: "2024-10-05",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "video",
-//     src:project5,
-//     gitLink: "https://github.com/Manish9026/Blog-app",
-//     liveUrl: "https://rapid-blog.vercel.app/",
-//     gradient: "from-purple-500 to-pink-600",
-//   },
-//     {
-//     slug: "ecommerce-shop-india",
-//     title: "E-Commerce (Shop India)",
-//     des: "ShopIndia is a modern e-commerce platform offering a seamless shopping experience. Features include product browsing, order tracking, and secure checkout.",
-//     category: "E-Commerce",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "mongodb", name: "MongoDB" },
-//       { slug: "express", name: "Express.js" },
-//       { slug: "nodejs", name: "Node.js" },
-//     ],
-//     features: [
-//       { slug: "catalog", title: "Product catalog & search" },
-//       { slug: "cart-checkout", title: "Cart & checkout system" },
-//       { slug: "tracking", title: "Order tracking" },
-//       { slug: "payments", title: "Secure payment integration" },
-//     ],
-//     role: "Frontend Developer",
-//     duration: "Jul 2024 – Sep 2024",
-//     date: "2024-09-01",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     src:project2,
-//     gitLink: "https://github.com/Manish9026/shopIndia",
-//     liveUrl: "https://shopindia.vercel.app/",
-//     gradient: "from-yellow-500 to-orange-600",
-//      timelineData: [
-//       {
-//         icon: Clock,
-//         title: "TIMELINE",
-//         value: "3 months",
-//         subtitle: "Development Duration",
-//         color: "from-purple-500 to-purple-600",
-//         iconBg: "bg-purple-500",
-//         textColor: "text-purple-400",
-//         delay: 0,
-//       },
-//       {
-//         icon: Calendar,
-//         title: "RELEASE DATE",
-//         value: "October 2024",
-//         subtitle: "Project Completion",
-//         color: "from-blue-500 to-blue-600",
-//         iconBg: "bg-blue-500",
-//         textColor: "text-blue-400",
-//         delay: 200,
-//       },
-//       {
-//         icon: Star,
-//         title: "STATUS",
-//         value: "Completed",
-//         subtitle: "Current Phase",
-//         color: "from-green-500 to-green-600",
-//         iconBg: "bg-green-500",
-//         textColor: "text-green-400",
-//         delay: 400,
-//       },
-//     ],
-//   },
-//   {
-//     slug: "3d-visualization-app",
-//     title: "3D Visualization App",
-//     des: "An interactive 3D model viewer that supports .glb, .gltf, and .obj formats. Allows upload, rotate, zoom, and explore 3D objects with smooth performance.",
-//     category: "3D App",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "threejs", name: "Three.js" },
-//       { slug: "mongodb", name: "MongoDB" },
-//     ],
-//     features: [
-//       { slug: "upload", title: "Upload & view 3D models" },
-//       { slug: "formats", title: "Support for .glb, .gltf, .obj formats" },
-//       { slug: "explore", title: "Rotate, zoom & explore" },
-//       { slug: "responsive", title: "Responsive rendering" },
-//     ],
-//     role: "Frontend Developer",
-//     duration: "Mar 2025 – Apr 2025",
-//     date: "2025-04-01",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     src:project7,
-//     gitLink: "https://github.com/Manish9026/3D-Viewer",
-//     liveUrl: "https://3-d-viewer-black.vercel.app/",
-//     gradient: "from-cyan-500 to-blue-600",
-//   },
-//   {
-//     slug: "service-eng-mates",
-//     title: "Service (ENG-MATES)",
-//     des: "A responsive service website for an English Speaking Institute to manage courses, enrollments, and inquiries.",
-//     category: "Service",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "nodejs", name: "Node.js" },
-//     ],
-//     features: [
-//       { slug: "courses", title: "Course management" },
-//       { slug: "enrollments", title: "User enrollments" },
-//       { slug: "responsive", title: "Responsive design" },
-//       { slug: "inquiries", title: "Inquiry form integration" },
-//     ],
-//     role: "Frontend Developer",
-//     duration: "Jun 2024 – Jul 2024",
-//     date: "2024-07-10",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     src:project3,
-//     gitLink: "https://github.com/Manish9026/ENG-MATES",
-//     liveUrl: "https://eng-mates.vercel.app/",
-//     gradient: "from-red-500 to-pink-600",
-//   },
-//   {
-//     slug: "booking-web-app",
-//     title: "Booking Web App",
-//     des: "A booking platform where users can reserve accommodations. Includes authentication, search, and payment features.",
-//     category: "Web App",
-//     techStack: [
-//       { slug: "react", name: "React" },
-//       { slug: "mongodb", name: "MongoDB" },
-//       { slug: "express", name: "Express.js" },
-//       { slug: "nodejs", name: "Node.js" },
-//     ],
-//     features: [
-//       { slug: "booking", title: "Accommodation booking" },
-//       { slug: "auth", title: "User authentication" },
-//       { slug: "search", title: "Search & filter" },
-//       { slug: "payments", title: "Payment gateway integration" },
-//     ],
-//     role: "Full-Stack Developer",
-//     duration: "Sep 2024 – Nov 2024",
-//     date: "2024-11-01",
-//     projectImages: [
-//       { slug: "cover", type: "cover", url: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" },
-//     ],
-//     laptopMockup: true,
-//     mediaType: "image",
-//     src:project4,
-//     gitLink: "https://github.com/Manish9026/booking-app",
-//     liveUrl: "https://booking-app-self-mu.vercel.app/",
-//     gradient: "from-emerald-500 to-teal-600",
-//   },
-
-// ];
 
 
 
@@ -1190,5 +538,149 @@ export const projectData = [
     liveUrl: "https://booking-app-self-mu.vercel.app/",
     gradient: "from-emerald-500 to-teal-600",
   },
+
+  {
+  slug: "id-card-generator-rbac",
+  title: "ID Card Generator with RBAC",
+  des: "A secure ID card generation system with role-based access control (RBAC). Supports multiple roles including Student, Faculty, College, University, and Admin. Features animated UI, session-based security, and efficient data management.",
+  category: "Web App",
+  techStack: [
+    techStackList?.react,
+    techStackList?.typescript,
+    techStackList?.node,
+    techStackList?.express,
+    techStackList?.mongodb,
+    // techStackList?.redux,
+    // techStackList?.jwt
+  ],
+  features: [
+    { title: 'Role-based access control (RBAC)', icon: Shield },
+    { title: 'Animated & responsive UI', icon: Layers },
+    { title: 'Session-based authentication', icon: Lock },
+    { title: 'Multi-role support (Student, Faculty, College, University, Admin)', icon: Users },
+    { title: 'Real-time ID generation', icon: FileText },
+    { title: 'Secure JWT authentication', icon: Key }
+  ],
+  role: "Full-Stack Developer",
+  duration: "Jul 2025 – Sep 2025",
+  date: "2025-09-01",
+    media: [
+     { slug: "screen-1", type: "image", url: acadmic1 },
+    { slug: "screen-1", type: "image", url: acadmic2 },
+
+    { slug: "screen-1", type: "image", url: acadmic3 },
+    { slug: "screen-1", type: "image", url: acadmic4 },
+    { slug: "screen-1", type: "image", url: acadmic5 },
+    { slug: "screen-1", type: "image", url: acadmic6 },
+    { slug: "screen-1", type: "image", url: acadmic7 },
+    { slug: "screen-1", type: "image", url: acadmic8 },
+    { slug: "screen-1", type: "image", url: acadmic9 },
+    { slug: "screen-1", type: "image", url: acadmic10 },
+    //
+  ],
+  laptopMockup: true,
+  mediaType: "image",
+  // src: projectIDCard,
+  src:acadmic1,
+  timeline: [
+    { icon: Clock, title: "TIMELINE", value: "3 months", subtitle: "Development Duration", color: "from-purple-500 to-purple-600", iconBg: "bg-purple-500", textColor: "text-purple-400", delay: 0 },
+    { icon: Calendar, title: "RELEASE DATE", value: "Sep 2025", subtitle: "Project Completion", color: "from-blue-500 to-blue-600", iconBg: "bg-blue-500", textColor: "text-blue-400", delay: 200 },
+    { icon: Star, title: "STATUS", value: "Completed", subtitle: "Current Phase", color: "from-green-500 to-green-600", iconBg: "bg-green-500", textColor: "text-green-400", delay: 400 }
+  ],
+  gitLink: "https://github.com/Manish9026/IDCardGenerator", // replace if available
+  liveUrl: "https://academicard.vercel.app", // replace with live URL
+  gradient: "from-indigo-500 to-teal-600",
+},
+{
+  slug: "freelance-orgix-media",
+  title: "Orgix Media - Digital Growth & Business Website",
+  des: "A freelance project for Orgix Media, focused on creating a digital growth and business website with interactive UI elements and smooth animations to enhance user engagement.",
+  category: "Freelance",
+  techStack: [
+    // techStackList?.php,
+    // techStackList?.codeigniter4,
+    techStackList?.html,
+    techStackList?.css,
+    techStackList?.javascript,
+    // techStackList?.gsap,
+    // techStackList?.json
+  ],
+  features: [
+    { title: 'Interactive animations using GSAP', icon: Zap },
+    { title: 'Responsive design across devices', icon: Smartphone },
+    { title: 'Modern UI/UX principles', icon: Layers },
+    { title: 'Dynamic content powered by JSON', icon: FileText },
+    { title: 'Business-focused design', icon: TrendingUp },
+    { title: 'Performance optimized', icon: BsSpeedometer }
+  ],
+  role: "Front-End & Back-End Developer",
+  duration: "Jun 2025 – Jul 2025",
+  date: "2025-07-15",
+  media: [
+    { slug: "cover", type: "image", url: projectOrgix },
+    { slug: "screen-1", type: "image", url: "https://images.pexels.com/photos/3184290/pexels-photo-3184290.jpeg" }
+  ],
+  laptopMockup: true,
+  mediaType: "image",
+  src: projectOrgix,
+  timeline: [
+    { icon: Clock, title: "TIMELINE", value: "2 months", subtitle: "Development Duration", color: "from-purple-500 to-purple-600", iconBg: "bg-purple-500", textColor: "text-purple-400", delay: 0 },
+    { icon: Calendar, title: "RELEASE DATE", value: "Jul 2025", subtitle: "Project Completion", color: "from-blue-500 to-blue-600", iconBg: "bg-blue-500", textColor: "text-blue-400", delay: 200 },
+    { icon: Star, title: "STATUS", value: "Completed", subtitle: "Current Phase", color: "from-green-500 to-green-600", iconBg: "bg-green-500", textColor: "text-green-400", delay: 400 },
+  ],
+  gitLink: "https://github.com/Manish9026/OrgixMedia", // optional if you have repo
+  liveUrl: "https://orgixmedia.com", // replace with live URL
+  gradient: "from-indigo-500 to-purple-600",
+},
+{
+  slug: "freelance-pari-media",
+  title: "Pari Media – Digital Growth & Business Website",
+  des: "A freelance project for Pari Media, focusing on creating a digital presence that enhances business outreach and engagement through a responsive and user-friendly website.",
+  category: "Freelance",
+  techStack: [
+    techStackList?.html,
+    techStackList?.css,
+    techStackList?.javascript
+  ],
+  features: [
+    { title: 'Responsive design across devices', icon: Smartphone },
+    { title: 'Interactive UI elements', icon: MousePointer },
+    { title: 'User-friendly navigation', icon: Compass },
+    { title: 'SEO optimized structure', icon: Search },
+    { title: 'Fast loading times', icon: BsSpeedometer },
+    { title: 'Modern UI/UX principles', icon: Layers }
+  ],
+  role: "Front-End Developer",
+  duration: "Aug 2025 – Sep 2025",
+  date: "2025-09-10",
+  media: [
+    { slug: "cover", type: "image", url: projectPariMedia },
+  ],
+  laptopMockup: true,
+  mediaType: "image",
+  src: projectPariMedia,
+  timeline: [
+    { icon: Clock, title: "TIMELINE", value: "1 month", subtitle: "Development Duration", color: "from-blue-500 to-blue-600", iconBg: "bg-blue-500", textColor: "text-blue-400", delay: 0 },
+    { icon: Calendar, title: "RELEASE DATE", value: "Sep 2025", subtitle: "Project Completion", color: "from-green-500 to-green-600", iconBg: "bg-green-500", textColor: "text-green-400", delay: 200 },
+    { icon: Star, title: "STATUS", value: "Completed", subtitle: "Current Phase", color: "from-purple-500 to-purple-600", iconBg: "bg-purple-500", textColor: "text-purple-400", delay: 400 }
+  ],
+  gitLink: "https://github.com/Manish9026/PariMedia", // optional if you have repo
+  liveUrl: "https://parimedia.co.in", // replace with live URL
+  gradient: "from-teal-500 to-blue-600",
+}
 ];
 
+
+
+// { slug: "screen-1", type: "image", url: "acadmic1" },
+    // { slug: "screen-1", type: "image", url: acadmic2 },
+
+    // { slug: "screen-1", type: "image", url: acadmic3 },
+    // { slug: "screen-1", type: "image", url: acadmic4 },
+    // { slug: "screen-1", type: "image", url: acadmic5 },
+    // { slug: "screen-1", type: "image", url: acadmic6 },
+    // { slug: "screen-1", type: "image", url: acadmic7 },
+    // { slug: "screen-1", type: "image", url: acadmic8 },
+    // { slug: "screen-1", type: "image", url: acadmic9 },
+    // { slug: "screen-1", type: "image", url: acadmic10 },
+    // acadmic1, acadmic10, acadmic2, acadmic3, acadmic4, acadmic5, acadmic6, acadmic7, acadmic8, acadmic9,

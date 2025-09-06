@@ -158,232 +158,236 @@ const ProjectDetails = () => {
 
   return (
     <>
-      <Navbar navType='link'/>
-    <div className="min-h-screen primary-p bg-dark-primary text-white overflow-hidden">
-      {/* Hero Section with Enhanced Slider */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center">
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-purple-600/10 to-blue-600/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-blue-600/10 to-teal-600/10 rounded-full blur-3xl"></div>
-        </div>
+      <Navbar navType='link' />
+      <div className="min-h-screen sm:px-5 sm:py-5 bg-dark-primary text-white overflow-hidden">
+        {/* Hero Section with Enhanced Slider */}
+        <section ref={heroRef} className="relative min-h-screen flex items-center justify-center sm:p-0 p-2">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-purple-600/10 to-blue-600/10 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-blue-600/10 to-teal-600/10 rounded-full blur-3xl"></div>
+          </div>
 
-        <div className="container mx-auto px-4 z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Project Info */}
-            <div className="space-y-8">
-              <div className="space-y-6">
-                <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-purple-500/30 text-purple-300 rounded-full text-sm font-semibold transform hover:scale-105 transition-all duration-300">
-                  <Star className="w-4 h-4 mr-2" />
-                  {project?.category || 'Web Application'}
+          <div className="container mx-auto px-4 z-10 mt-4">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              {/* Project Info */}
+              <div className="space-y-8">
+                <div className="space-y-6">
+                  <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600/20 to-blue-600/20 backdrop-blur-sm border border-purple-500/30 text-purple-300 rounded-full text-sm font-semibold transform hover:scale-105 transition-all duration-300">
+                    <Star className="w-4 h-4 mr-2" />
+                    {project?.category || 'Web Application'}
+                  </div>
+
+                  <h1
+                    ref={titleRef}
+                    className="md:text-6xl xs:text-3xl text-2xl font-bold bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent leading-tight opacity-0"
+                  >
+                    {project?.title || 'Project Name'}
+                  </h1>
+
+                  <p
+                    ref={descriptionRef}
+                    className="text-xl text-gray-300 leading-relaxed max-w-2xl opacity-0"
+                  >
+                    {project?.des || 'An innovative platform that revolutionizes portfolio management with real-time data visualization and seamless user experience.'}
+                  </p>
                 </div>
 
-                <h1
-                  ref={titleRef}
-                  className="text-6xl lg:text-8xl font-bold bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent leading-tight opacity-0"
-                >
-                  {project?.title || 'Project Name'}
-                </h1>
+                <div className="flex items-center space-x-8 text-sm text-gray-400">
+                  <div className="flex items-center">
+                    <Calendar className="w-5 h-5 mr-2 text-purple-400" />
+                    {/* <span>December 2024</span> */}
+                    <span>{project?.duration ?? ""}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Smartphone className="w-5 h-5 mr-2 text-blue-400" />
+                    <span>Web & Mobile</span>
+                  </div>
+                </div>
 
-                <p
-                  ref={descriptionRef}
-                  className="text-xl text-gray-300 leading-relaxed max-w-2xl opacity-0"
+                <div
+                  ref={buttonsRef}
+                  className="flex flex-wrap gap-6 opacity-0"
                 >
-                  {project?.des || 'An innovative platform that revolutionizes portfolio management with real-time data visualization and seamless user experience.'}
-                </p>
+                  <a href={project?.liveUrl} target='_blank' className="group bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-2xl font-semibold flex items-center space-x-3 hover:shadow-2xl hover:shadow-purple-500/25 hover:scale-110 hover:-translate-y-1 transform transition-all duration-500">
+                    <Eye className="w-5 h-5" />
+                    <span>View Live Demo</span>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
+                  </a>
+                  <a href={project?.gitLink} target='_blank' className="group bg-dark-secondary/50 backdrop-blur-sm border border-gray-600/30 text-gray-200 px-8 py-4 rounded-2xl font-semibold flex items-center space-x-3 hover:bg-dark-secondary hover:border-gray-500/50 hover:scale-110 hover:-translate-y-1 transform transition-all duration-500">
+                    <Github className="w-5 h-5" />
+                    <span>Explore Code</span>
+                    <ExternalLink className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
+                  </a>
+                </div>
               </div>
 
-              <div className="flex items-center space-x-8 text-sm text-gray-400">
-                <div className="flex items-center">
-                  <Calendar className="w-5 h-5 mr-2 text-purple-400" />
-                  {/* <span>December 2024</span> */}
-                  <span>{project?.duration ?? ""}</span>
-                </div>
-                <div className="flex items-center">
-                  <Smartphone className="w-5 h-5 mr-2 text-blue-400" />
-                  <span>Web & Mobile</span>
-                </div>
-              </div>
-
+              {/* Enhanced Image Slider */}
               <div
-                ref={buttonsRef}
-                className="flex flex-wrap gap-6 opacity-0"
+                ref={sliderRef}
+                className="relative opacity-0"
               >
-                <a href={project?.liveUrl} target='_blank' className="group bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-2xl font-semibold flex items-center space-x-3 hover:shadow-2xl hover:shadow-purple-500/25 hover:scale-110 hover:-translate-y-1 transform transition-all duration-500">
-                  <Eye className="w-5 h-5" />
-                  <span>View Live Demo</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
-                </a>
-                <a href={project?.gitLink} target='_blank' className="group bg-dark-secondary/50 backdrop-blur-sm border border-gray-600/30 text-gray-200 px-8 py-4 rounded-2xl font-semibold flex items-center space-x-3 hover:bg-dark-secondary hover:border-gray-500/50 hover:scale-110 hover:-translate-y-1 transform transition-all duration-500">
-                  <Github className="w-5 h-5" />
-                  <span>Explore Code</span>
-                  <ExternalLink className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
-                </a>
-              </div>
-            </div>
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl  ">
+                  <Swiper
 
-            {/* Enhanced Image Slider */}
-            <div
-              ref={sliderRef}
-              className="relative opacity-0"
-            >
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl  ">
-                <Swiper
+                    modules={[Navigation, Pagination, Autoplay]}
+                    slidesPerView={1}
+                    spaceBetween={20}
+                    breakpoints={{
+                      1024: {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                      },
+                    }}
+                    autoplay={{
+                      delay: 3000,
+                      disableOnInteraction: false,
+                    }}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    navigation={true}
+                    loop={true}
+                    speed={500}
+                    className="project-swiper lg:w-full  w-[80vw]"
+                  >
+                    {project?.media && project?.media.map((media, index) => (
+                      <SwiperSlide key={index}>
+                        <div className="relative aspect-[16/9] rounded-xl overflow-hidden group">
 
-                  modules={[Navigation, Pagination, Autoplay]}
-                  slidesPerView={1}
-                  spaceBetween={20}
-                  breakpoints={{
-                    1024: {
-                      slidesPerView: 1,
-                      spaceBetween: 30,
-                    },
-                  }}
-                  autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                  }}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  navigation={true}
-                  loop={true}
-                  speed={500}
-                  className="project-swiper lg:w-full  w-[70vw]"
-                >
-                  {project?.media && project?.media.map((media, index) => (
-                    <SwiperSlide key={index}>
-                      <div className="relative aspect-[16/10] rounded-xl overflow-hidden group">
+                          {
+                            media?.type === 'video' ? (
+                              <video
+                                src={media?.url}
+                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                              />
+                            ) : (<img
+                              src={media?.url}
+                              alt={`Project screenshot ${index + 1}`}
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            />)
 
-                      {
-                        media?.type === 'video' ? (
-                          <video
-                            src={media?.url}
-                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                          />
-                        ) : ( <img
-                          src={media?.url}
-                          alt={`Project screenshot ${index + 1}`}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        />)
+                          }
 
-                      }
-                       
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hover:scale-110 transition-transform duration-300 cursor-pointer">
-          <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-gradient-to-b from-purple-400 to-blue-400 rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
-      </section>
-
-      {/* Project Overview Section */}
-      <section className="py-20 bg-dark-secondary/30 backdrop-blur-sm relative overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center fade-up">
-            <h2 className="text-5xl font-bold text-white mb-8">Project Overview</h2>
-            <p className="text-xl text-gray-300 leading-relaxed mb-16">
-             { project?.detailedDes ?? "This comprehensive portfolio management platform combines modern design principles with powerful functionality. Built with performance in mind, it features real-time data visualization, responsive design, and an intuitive user experience that makes portfolio tracking effortless and engaging."}
-            </p>
-          </div>
-
-          {/* Timeline Section */}
-          {(project?.timeline && Array.isArray(project?.timeline) && project?.timeline?.length > 0) &&
-            (<TimelineSection timelineData={project?.timeline ?? []} />)}
-        </div>
-      </section>
-
-      {/* Technology Stack Section */}
-      {(project?.techStack && Array.isArray(project?.techStack) && project?.techStack?.length > 0) && (<section className="py-20 bg-dark-primary relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16 fade-up">
-            <h2 className="text-5xl font-bold text-white mb-6">Technology Stack</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Built with modern, scalable technologies to ensure performance,
-              reliability, and exceptional user experience.
-            </p>
-          </div>
-
-          <TechStackCard techStack={project?.techStack ?? []} />
-        </div>
-      </section>)}
-
-      {/* Key Features Section */}
-      {project?.features && (<motion.section
-
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-
-        className="py-20 bg-dark-secondary/50 backdrop-blur-sm">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 fade-up">
-            <h2 className="text-5xl font-bold text-white mb-6">Key Features</h2>
-            <p className="text-xl text-gray-300">Innovative solutions crafted with precision and care</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {project?.features.map((feature, index) => (
-              <motion.div
-                key={index}
-                custom={index} // Pass index for stagger
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                variants={featureVariants}
-                className="group p-8 bg-dark-accent/30 backdrop-blur-sm border border-gray-600/20 rounded-2xl hover:bg-dark-accent/50 hover:border-purple-500/30 transition-all duration-300 cursor-pointer opacity-0"
-              >
-                <div className="flex items-center mb-4">
-                  {feature?.icon && (<div className="w-12 h-12 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-all duration-300">
-                    <feature.icon className="w-6 h-6 text-purple-400" />
-                  </div>)}
-                  <Heart className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-all duration-300" />
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-200 transition-all duration-300">
-                  {feature?.title}
-                </h3>
-              </motion.div>
-            ))}
+              </div>
+            </div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-16 fade-up">
-            <a href={project?.liveUrl} target='_blank' className="group bg-gradient-to-r from-purple-600 to-blue-600 text-white px-12 py-6 rounded-2xl font-semibold text-lg flex items-center space-x-3 hover:shadow-2xl hover:shadow-purple-500/25 hover:scale-110 hover:-translate-y-2 transform transition-all duration-500">
-              <Eye className="w-6 h-6" />
-              <span>View Live Demo</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-3 transition-transform duration-300" />
-            </a>
-            <a href={project?.gitLink} target='_blank' className="group bg-dark-accent/50 backdrop-blur-sm border border-gray-600/30 text-gray-200 px-12 py-6 rounded-2xl font-semibold text-lg flex items-center space-x-3 hover:bg-dark-accent hover:border-gray-500/50 hover:scale-110 hover:-translate-y-2 transform transition-all duration-500">
-              <Github className="w-6 h-6" />
-              <span>Explore Code</span>
-              <ExternalLink className="w-5 h-5 group-hover:translate-x-3 transition-transform duration-300" />
-            </a>
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hover:scale-110 transition-transform duration-300 cursor-pointer">
+            <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-gradient-to-b from-purple-400 to-blue-400 rounded-full mt-2 animate-pulse"></div>
+            </div>
           </div>
-        </div>
-      </motion.section>)}
+        </section>
 
-      {/* Project Metrics */}
-      {project?.metrics && (<section className="py-20 bg-dark-primary fade-up">
-        <div className="container mx-auto px-4">
-          <ProjectMetrics metrics={projectMetrics} />
-        </div>
-      </section>)}
-    </div>
+        {/* Project Overview Section */}
+        <section className="py-20 bg-dark-secondary/30 backdrop-blur-sm relative overflow-hidden">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center fade-up">
+              <h2 className="text-5xl font-bold text-white mb-8">Project Overview</h2>
+
+              <div className="text-xl text-gray-300 leading-relaxed mb-16"
+                dangerouslySetInnerHTML={{
+                  __html: project?.detailedDes ??
+                    "This comprehensive portfolio management platform combines modern design principles with powerful functionality. Built with performance in mind, it features real-time data visualization, responsive design, and an intuitive user experience that makes portfolio tracking effortless and engaging."
+                }}
+              />
+            </div>
+
+            {/* Timeline Section */}
+            {(project?.timeline && Array.isArray(project?.timeline) && project?.timeline?.length > 0) &&
+              (<TimelineSection timelineData={project?.timeline ?? []} />)}
+          </div>
+        </section>
+
+        {/* Technology Stack Section */}
+        {(project?.techStack && Array.isArray(project?.techStack) && project?.techStack?.length > 0) && (<section className="py-20 bg-dark-primary relative overflow-hidden">
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="text-center mb-16 fade-up">
+              <h2 className="text-5xl font-bold text-white mb-6">Technology Stack</h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Built with modern, scalable technologies to ensure performance,
+                reliability, and exceptional user experience.
+              </p>
+            </div>
+
+            <TechStackCard techStack={project?.techStack ?? []} />
+          </div>
+        </section>)}
+
+        {/* Key Features Section */}
+        {project?.features && (<motion.section
+
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+
+          className="py-20 bg-dark-secondary/50 backdrop-blur-sm">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16 fade-up">
+              <h2 className="text-5xl font-bold text-white mb-6">Key Features</h2>
+              <p className="text-xl text-gray-300">Innovative solutions crafted with precision and care</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {project?.features.map((feature, index) => (
+                <motion.div
+                  key={index}
+                  custom={index} // Pass index for stagger
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.2 }}
+                  variants={featureVariants}
+                  className="group p-8 bg-dark-accent/30 backdrop-blur-sm border border-gray-600/20 rounded-2xl hover:bg-dark-accent/50 hover:border-purple-500/30 transition-all duration-300 cursor-pointer opacity-0"
+                >
+                  <div className="flex items-center mb-4">
+                    {feature?.icon && (<div className="w-12 h-12 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-all duration-300">
+                      <feature.icon className="w-6 h-6 text-purple-400" />
+                    </div>)}
+                    <Heart className="w-5 h-5 text-purple-400 opacity-0 group-hover:opacity-100 transition-all duration-300" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-purple-200 transition-all duration-300">
+                    {feature?.title}
+                  </h3>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap  gap-6 justify-center items-center mt-16 fade-up">
+              <a href={project?.liveUrl} target='_blank' className="group bg-gradient-to-r from-purple-600 to-blue-600 text-white sml:px-12 sml:py-6 px-4 py-4 rounded-2xl font-semibold text-lg  flex items-center space-x-3 hover:shadow-2xl hover:shadow-purple-500/25 hover:scale-110 hover:-translate-y-2 transform transition-all duration-500">
+                <Eye className="w-6 h-6" />
+                <span>View Live Demo</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-3 transition-transform duration-300" />
+              </a>
+              <a href={project?.gitLink} target='_blank' className="group bg-dark-accent/50 backdrop-blur-sm border border-gray-600/30 text-gray-200 sml:px-12 sml:py-6 px-4 py-4 rounded-2xl font-semibold text-lg flex items-center space-x-3 hover:bg-dark-accent hover:border-gray-500/50 hover:scale-110 hover:-translate-y-2 transform transition-all duration-500">
+                <Github className="w-6 h-6" />
+                <span>Explore Code</span>
+                <ExternalLink className="w-5 h-5 group-hover:translate-x-3 transition-transform duration-300" />
+              </a>
+            </div>
+          </div>
+        </motion.section>)}
+
+        {/* Project Metrics */}
+        {project?.metrics && (<section className="py-20 bg-dark-primary fade-up">
+          <div className="container mx-auto px-4">
+            <ProjectMetrics metrics={projectMetrics} />
+          </div>
+        </section>)}
+      </div>
     </>
-    
+
 
   );
 };
