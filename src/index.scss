@@ -1,28 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* #a594f9 */
 
-<<<<<<< HEAD
-@layer components{
-    .bannerIcon{
-        @apply w-16 h-16 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
-    }
-    .resumeLi {
-    @apply w-full h-20 bg-black bg-opacity-25 text-xl text-gray-300 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] rounded-none;
-         }
-.bgOpacity {
-@apply bg-black bg-opacity-40;
-                  }
-    .contactInput{
-        @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-cardOne text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300
-    }
-.contactTextArea{
-    @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-cardOne text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
-}
-=======
 @layer components {
     .bannerIcon {
         @apply w-16 h-16 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
@@ -43,31 +25,58 @@
     .contactTextArea {
         @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-cardOne text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
     }
->>>>>>> 93f0500 (Add projectData and scroll-to-hash feature)
+}
+
+@layer components {
+    .bannerIcon {
+        @apply w-16 h-16 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
+    }
+
+    .resumeLi {
+        @apply w-full h-20 bg-black bg-opacity-25 text-xl text-gray-300 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] rounded-none;
+    }
+
+    .bgOpacity {
+        @apply bg-black bg-opacity-40;
+    }
+
+    .contactInput {
+        @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-cardOne text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300
+    }
+
+    .contactTextArea {
+        @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-cardOne text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
+    }
+
+
 }
 
 .active {
     color: white;
 }
-<<<<<<< HEAD
-.scrollbar-hide::-webkit-scrollbar{
+
+.scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
 
 
-.primary-p{
+.primary-p {
     @apply px-5 py-5 sml:px-10;
 }
-=======
+
+
 
 /* Universal Scrollbar Hide */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and old Edge */
-  scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and old Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari, Opera */
+    display: none;
+    /* Chrome, Safari, Opera */
 }
 
 
@@ -76,7 +85,7 @@
     @apply px-5 py-5 sml:px-10;
 }
 
->>>>>>> 93f0500 (Add projectData and scroll-to-hash feature)
+
 /* SCSS RGB */
 $federal-blue: rgba(3, 4, 94, 1);
 $marian-blue: rgba(2, 62, 138, 1);
@@ -99,27 +108,27 @@ $gradient-top-left: linear-gradient(225deg, #03045eff, #023e8aff, #0077b6ff, #00
 $gradient-bottom-left: linear-gradient(315deg, #03045eff, #023e8aff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff);
 $gradient-radial: radial-gradient(#03045eff, #023e8aff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff);
 
-<<<<<<< HEAD
-.gradient{
+.gradient {
     background: $gradient-top-left;
 }
-.line-animation{
-animation: moving-x 2s   linear infinite alternate;
-background-image: linear-gradient(to bottom,rgb(59, 96, 216),rgb(98, 106, 214),black);
+
+.line-animation {
+    animation: moving-x 2s linear infinite alternate;
+    background-image: linear-gradient(to bottom, rgb(59, 96, 216), rgb(98, 106, 214), black);
 }
+
 @keyframes moving-x {
-    0%{
-        top:0
+    0% {
+        top: 0
     }
-    100%{
-        top:80%
+
+    100% {
+        top: 80%
     }
 }
 
-.contact-card{
+// .contact-card {}
 
-}
-=======
 .gradient {
     background: $gradient-top-left;
 }
@@ -141,8 +150,4 @@ background-image: linear-gradient(to bottom,rgb(59, 96, 216),rgb(98, 106, 214),b
 
 
 
-.contact-card {}
 
-
-
->>>>>>> 93f0500 (Add projectData and scroll-to-hash feature)
