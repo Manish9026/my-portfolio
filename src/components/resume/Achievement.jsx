@@ -15,7 +15,7 @@ const Achievement = () => {
       {
         achivementData.map(({title,period,achivements},mainId)=>{
           return(
-            <div>
+            <div className="flex-1">
             <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
               <p className="text-sm text-designColor tracking-[4px]">{period}</p>
               <h2 className="text-3xl md:text-4xl font-bold">{title}</h2>
@@ -26,9 +26,9 @@ const Achievement = () => {
                 <span className="w-1 rounded-sm absolute -translate-x-1/2 left-1/2  bg-red-500 h-[20%] line-animation"></span>
               </span>
              {
-              achivements.map(({title,subTitle,describe,result},index)=>{
+              achivements.map(({title,subTitle,describe,result,media},index)=>{
                 return(
-    <ResumeCard title={title} subTitle={subTitle} des={describe} result={result}/>
+    <ResumeCard title={title} subTitle={subTitle} des={describe} result={result} media={media}/>
                 )
               })
              }

@@ -21,7 +21,7 @@ const Education = () => {
         educationData.map(({title,period,program},mainId)=>{
 
           return(
-            <div key={mainId}>
+            <div key={mainId} className="flex-1 ">
             <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
               <p className="text-sm text-designColor tracking-[4px]">{period}</p>
               <h2 className="text-3xl md:text-4xl font-bold capitalize">{title}</h2>

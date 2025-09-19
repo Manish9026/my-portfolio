@@ -151,3 +151,168 @@ $gradient-radial: radial-gradient(#03045eff, #023e8aff, #0077b6ff, #0096c7ff, #0
 
 
 
+
+@layer base {
+  :root {
+    --background: 220 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 25% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 59%;
+    --primary-foreground: 220 25% 8%;
+
+    --secondary: 220 25% 16%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 25% 16%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 280 89% 67%;
+    --accent-foreground: 220 25% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 25% 20%;
+    --input: 220 25% 16%;
+    --ring: 217 91% 59%;
+
+    --radius: 1rem;
+
+    /* Glassmorphism colors */
+    // --glass-bg: 220 25% 12%;
+    // --glass-bg:243 59.8% 6.6%
+    // --glass-border: 220 25% 25%;
+    // --glass-glow: 217 91% 59%;
+
+      --glass-bg: 224 89% 7%;
+  --glass-border: 224 30% 30%;
+  --glass-glow: 224 90% 60%;
+
+    /* Gradient colors */
+    --gradient-start: 217 91% 59%;
+    --gradient-mid: 280 89% 67%;
+    --gradient-end: 350 89% 60%;
+
+    /* Progress bar colors */
+    --progress-bg: 220 25% 16%;
+    --progress-fill: linear-gradient(90deg, hsl(var(--gradient-start)), hsl(var(--gradient-mid)), hsl(var(--gradient-end)));
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode uses same values as root for this design */
+    --background: 220 25% 8%;
+    --foreground: 210 40% 98%;
+    --card: 220 25% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 59%;
+    --primary-foreground: 220 25% 8%;
+    --secondary: 220 25% 16%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 25% 16%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 280 89% 67%;
+    --accent-foreground: 220 25% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 25% 20%;
+    --input: 220 25% 16%;
+    --ring: 217 91% 59%;
+  }
+}
+
+@layer base {
+//   * {
+//     @apply border-border;
+//   }
+
+//   body {
+//     @apply bg-background text-foreground;
+//     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+//   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: hsla(var(--glass-bg) / 0.8);
+    // background-color: hsl(224, 89%, 7%);
+    backdrop-filter: blur(12px) saturate(200%);
+    border: 1px solid hsla(var(--glass-border) / 0.8);
+    box-shadow: 
+      0 8px 32px hsla(var(--glass-glow) / 0.1),
+      inset 0 1px 0 hsla(var(--glass-border) / 0.8);
+  }
+
+  .glass-hover:hover {
+    background: hsla(var(--glass-bg) / 0.9);
+    border-color: hsla(var(--glass-glow) / 0.9);
+    box-shadow: 
+      0 12px 40px hsla(var(--glass-glow) / 0.2),
+      inset 0 1px 0 hsla(var(--glass-border) / 0.4);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-mid)), hsl(var(--gradient-end)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  .glow {
+    box-shadow: 0 0 20px hsla(var(--glass-glow) / 0.9);
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsla(var(--glass-glow) / 0.1);
+      transform: scale(1);
+    }
+    50% { 
+      box-shadow: 0 0 30px hsla(var(--glass-glow) / 0.2);
+      transform: scale(1.02);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  .text-primary{
+    color: rgb(182, 189, 246);
+  }
+}

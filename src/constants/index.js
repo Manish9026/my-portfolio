@@ -1,5 +1,23 @@
 import {   acadmic1, acadmic10, acadmic2, acadmic3, acadmic4, acadmic5, acadmic6, acadmic7, acadmic8, acadmic9, project1, project2,project3 ,project4, project5, project6, project7, projectOrgix, projectPariMedia} from "../assets/projectImages/projectImages";
 
+import { Clock, Calendar, Star,Code2,Zap,Palette, BarChart3, Smartphone, TrendingUp, Shield, Layers, FileText, Key, Users, Compass, MousePointer, Search, Lock, } from "lucide-react";
+import { IoLogoNodejs as Node } from "react-icons/io5";
+import { SiTypescript as TypeScript ,SiExpress,SiThreedotjs } from "react-icons/si";
+import { RiTailwindCssFill as Tailwind,} from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
+import { RiNextjsFill ,RiJavascriptFill } from "react-icons/ri";
+import { TiHtml5  } from "react-icons/ti";
+ import { IoLogoCss3 } from "react-icons/io";
+import { BsSpeedometer } from "react-icons/bs";
+import { 
+   
+  Database, 
+  FileCode,
+  Globe,
+  Server,
+  Figma,
+} from "lucide-react";
 
 export const socialLinks={
   instagram:{
@@ -66,6 +84,11 @@ export const achivementData=[{
       from:"NPTEl",
       date:'24/08/2023'
     },
+    media:{
+      link:"https://drive.google.com/file/d/1aO6BkGmXYkm-MOi_y_L0Cf4yDSKSIDi1/view?usp=sharing ",
+      title:"view certificate"
+
+    },
     result:"success"
   
   },
@@ -77,7 +100,12 @@ export const achivementData=[{
       from:"NPTEl ",
       date:'24/08/2023'
     },
-    result:"success"
+    result:"success",
+     media:{
+     link:"https://drive.google.com/file/d/1jyUK4HgrPaAlhzNr_Ai2SeHWVvO2lo-w/view?usp=sharing",
+      title:"view certificate"
+
+    },
   
   }]
 },{
@@ -85,7 +113,7 @@ export const achivementData=[{
   achivements:[{
     title:"Tech competition  ",
     subTitle:"with skiilyst ",
-    describe:"",
+    describe:"Participated in the Tech Competition with Skilyst, where I explored innovative problem-solving, improved my technical skills, and gained valuable learning experience.",
     issue:{
       from:"skiilyst",
       date:'24/08/2023'
@@ -96,7 +124,7 @@ export const achivementData=[{
   {
     title:"Quiz competition  ",
     subTitle:"with GeeksforGeek  ",
-    describe:"",
+    describe:"Successfully participated in the Web Development Quiz Competition organized by GeeksforGeeks, gaining valuable knowledge and enhancing my skills in HTML, CSS, and JavaScript.",
     issue:{
       from:"GeeksforGeek",
       date:'24/08/2023'
@@ -139,52 +167,46 @@ export const educationData=[
     subTitle:"Throught NPTEL Exam",
     des:"",
     result:"india"
+  },
+{
+    title:"MERN Full Stack",
+    subTitle:"By GeeksForGeeks",
+    des:"Completed the MERN Full Stack program by GeeksforGeeks, working on 15+ real-world projects and gaining hands-on experience in MongoDB, Express.js, React, and Node.js for building dynamic web applications.",
+    result:"india"
   }]
 }]
 
-export const skillData=[
+
+
+export const skillsData = [
   {
-  title:"Development Skill",
-  skills:[{
-    title:"react",result:"90%"
-  },{
-    title:"css3",result:"85%"
-  },{
-    title:"HTML 5",result:"100%"
-  },{
-    title:"javascript",result:"90%"
-  },{
-    title:"node js",result:"75%"
-  },{
-    title:"Express js",result:"90%"
-  },{
-    title:"react native",result:"45%"
-  }]
-},
-{
-  title:"Database skill",
-  skills:[{
-    title:"mongodb",
-    result:"80%"
-  },{
-    title:"mysql",
-    result:"90%"
-  },{
-    title:"postGress",
-    result:"70%"
-  },{
-    title:"SQL server",
-    result:"80%"
-  }]
-},
-{
-  title:"design tools",
-  skills:[{
-    title:"figma",
-    result:"70%"
-  }]
-}
-]
+    title: "Development Skill",
+    skills: [
+      { name: "HTML 5", level: 100, icon: FileCode },
+      { name: "REACT", level: 90, icon: Code2 },
+      { name: "JAVASCRIPT", level: 90, icon: Zap },
+      { name: "EXPRESS JS", level: 90, icon: Server },
+      { name: "CSS3", level: 85, icon: Palette },
+      { name: "NODE JS", level: 75, icon: Globe },
+      { name: "REACT NATIVE", level: 45, icon: Smartphone },
+    ]
+  },
+  {
+    title: "Database Skill", 
+    skills: [
+      { name: "MYSQL", level: 90, icon: Database },
+      { name: "MONGODB", level: 80, icon: Layers },
+      { name: "SQL SERVER", level: 80, icon: Server },
+      { name: "POSTGRES", level: 70, icon: Database },
+    ]
+  },
+  {
+    title: "Design Tools",
+    skills: [
+      { name: "FIGMA", level: 70, icon: Figma },
+    ]
+  }
+];
 
 
 export const experienceData = [
@@ -247,16 +269,7 @@ export const testimonialData=[{
 
 
 
-import { Clock, Calendar, Star,Code2,Zap,Palette, BarChart3, Smartphone, TrendingUp, Shield, Layers, FileText, Key, Users, Compass, MousePointer, Search, Lock, } from "lucide-react";
-import { IoLogoNodejs as Node } from "react-icons/io5";
-import { SiTypescript as TypeScript ,SiExpress,SiThreedotjs } from "react-icons/si";
-import { RiTailwindCssFill as Tailwind,} from "react-icons/ri";
-import { FaReact } from "react-icons/fa";
-import { DiMongodb } from "react-icons/di";
-import { RiNextjsFill ,RiJavascriptFill } from "react-icons/ri";
-import { TiHtml5  } from "react-icons/ti";
- import { IoLogoCss3 } from "react-icons/io";
-import { BsSpeedometer } from "react-icons/bs";
+
 // import { 
 //   Code2, Zap, Palette, Database, Globe, Layers, Cpu, Terminal, Cloud, Server, 
 //   Figma, Box, GitBranch, Docker, Html5, 
@@ -292,6 +305,84 @@ export const techStackList = {
 
 
 export const projectData = [
+
+  {
+  slug: "freelance-orgix-media",
+  title: "Orgix Media - Digital Growth & Business Website",
+  des: "A freelance project for Orgix Media, focused on creating a digital growth and business website with interactive UI elements and smooth animations to enhance user engagement.",
+  category: "Freelance",
+  techStack: [
+    // techStackList?.php,
+    // techStackList?.codeigniter4,
+    techStackList?.html,
+    techStackList?.css,
+    techStackList?.javascript,
+    // techStackList?.gsap,
+    // techStackList?.json
+  ],
+  features: [
+    { title: 'Interactive animations using GSAP', icon: Zap },
+    { title: 'Responsive design across devices', icon: Smartphone },
+    { title: 'Modern UI/UX principles', icon: Layers },
+    { title: 'Dynamic content powered by JSON', icon: FileText },
+    { title: 'Business-focused design', icon: TrendingUp },
+    { title: 'Performance optimized', icon: BsSpeedometer }
+  ],
+  role: "Front-End & Back-End Developer",
+  duration: "Jun 2025 – Jul 2025",
+  date: "2025-07-15",
+  media: [
+    { slug: "cover", type: "image", url: projectOrgix },
+    { slug: "screen-1", type: "image", url: "https://images.pexels.com/photos/3184290/pexels-photo-3184290.jpeg" }
+  ],
+  laptopMockup: true,
+  mediaType: "image",
+  src: projectOrgix,
+  timeline: [
+    { icon: Clock, title: "TIMELINE", value: "2 months", subtitle: "Development Duration", color: "from-purple-500 to-purple-600", iconBg: "bg-purple-500", textColor: "text-purple-400", delay: 0 },
+    { icon: Calendar, title: "RELEASE DATE", value: "Jul 2025", subtitle: "Project Completion", color: "from-blue-500 to-blue-600", iconBg: "bg-blue-500", textColor: "text-blue-400", delay: 200 },
+    { icon: Star, title: "STATUS", value: "Completed", subtitle: "Current Phase", color: "from-green-500 to-green-600", iconBg: "bg-green-500", textColor: "text-green-400", delay: 400 },
+  ],
+  gitLink: "https://github.com/Manish9026/OrgixMedia", // optional if you have repo
+  liveUrl: "https://orgixmedia.com", // replace with live URL
+  gradient: "from-indigo-500 to-purple-600",
+},
+{
+  slug: "freelance-pari-media",
+  title: "Pari Media – Digital Growth & Business Website",
+  des: "A freelance project for Pari Media, focusing on creating a digital presence that enhances business outreach and engagement through a responsive and user-friendly website.",
+  category: "Freelance",
+  techStack: [
+    techStackList?.html,
+    techStackList?.css,
+    techStackList?.javascript
+  ],
+  features: [
+    { title: 'Responsive design across devices', icon: Smartphone },
+    { title: 'Interactive UI elements', icon: MousePointer },
+    { title: 'User-friendly navigation', icon: Compass },
+    { title: 'SEO optimized structure', icon: Search },
+    { title: 'Fast loading times', icon: BsSpeedometer },
+    { title: 'Modern UI/UX principles', icon: Layers }
+  ],
+  role: "Front-End Developer",
+  duration: "Aug 2025 – Sep 2025",
+  date: "2025-09-10",
+  media: [
+    { slug: "cover", type: "image", url: projectPariMedia },
+  ],
+  laptopMockup: true,
+  mediaType: "image",
+  src: projectPariMedia,
+  timeline: [
+    { icon: Clock, title: "TIMELINE", value: "1 month", subtitle: "Development Duration", color: "from-blue-500 to-blue-600", iconBg: "bg-blue-500", textColor: "text-blue-400", delay: 0 },
+    { icon: Calendar, title: "RELEASE DATE", value: "Sep 2025", subtitle: "Project Completion", color: "from-green-500 to-green-600", iconBg: "bg-green-500", textColor: "text-green-400", delay: 200 },
+    { icon: Star, title: "STATUS", value: "Completed", subtitle: "Current Phase", color: "from-purple-500 to-purple-600", iconBg: "bg-purple-500", textColor: "text-purple-400", delay: 400 }
+  ],
+  gitLink: "https://github.com/Manish9026/PariMedia", // optional if you have repo
+  liveUrl: "https://parimedia.co.in", // replace with live URL
+  gradient: "from-teal-500 to-blue-600",
+},
   {
     slug: "social-media-rapid-blog",
     title: "Social Media (Rapid Blog)",
@@ -591,83 +682,7 @@ export const projectData = [
   liveUrl: "https://academicard.vercel.app", // replace with live URL
   gradient: "from-indigo-500 to-teal-600",
 },
-{
-  slug: "freelance-orgix-media",
-  title: "Orgix Media - Digital Growth & Business Website",
-  des: "A freelance project for Orgix Media, focused on creating a digital growth and business website with interactive UI elements and smooth animations to enhance user engagement.",
-  category: "Freelance",
-  techStack: [
-    // techStackList?.php,
-    // techStackList?.codeigniter4,
-    techStackList?.html,
-    techStackList?.css,
-    techStackList?.javascript,
-    // techStackList?.gsap,
-    // techStackList?.json
-  ],
-  features: [
-    { title: 'Interactive animations using GSAP', icon: Zap },
-    { title: 'Responsive design across devices', icon: Smartphone },
-    { title: 'Modern UI/UX principles', icon: Layers },
-    { title: 'Dynamic content powered by JSON', icon: FileText },
-    { title: 'Business-focused design', icon: TrendingUp },
-    { title: 'Performance optimized', icon: BsSpeedometer }
-  ],
-  role: "Front-End & Back-End Developer",
-  duration: "Jun 2025 – Jul 2025",
-  date: "2025-07-15",
-  media: [
-    { slug: "cover", type: "image", url: projectOrgix },
-    { slug: "screen-1", type: "image", url: "https://images.pexels.com/photos/3184290/pexels-photo-3184290.jpeg" }
-  ],
-  laptopMockup: true,
-  mediaType: "image",
-  src: projectOrgix,
-  timeline: [
-    { icon: Clock, title: "TIMELINE", value: "2 months", subtitle: "Development Duration", color: "from-purple-500 to-purple-600", iconBg: "bg-purple-500", textColor: "text-purple-400", delay: 0 },
-    { icon: Calendar, title: "RELEASE DATE", value: "Jul 2025", subtitle: "Project Completion", color: "from-blue-500 to-blue-600", iconBg: "bg-blue-500", textColor: "text-blue-400", delay: 200 },
-    { icon: Star, title: "STATUS", value: "Completed", subtitle: "Current Phase", color: "from-green-500 to-green-600", iconBg: "bg-green-500", textColor: "text-green-400", delay: 400 },
-  ],
-  gitLink: "https://github.com/Manish9026/OrgixMedia", // optional if you have repo
-  liveUrl: "https://orgixmedia.com", // replace with live URL
-  gradient: "from-indigo-500 to-purple-600",
-},
-{
-  slug: "freelance-pari-media",
-  title: "Pari Media – Digital Growth & Business Website",
-  des: "A freelance project for Pari Media, focusing on creating a digital presence that enhances business outreach and engagement through a responsive and user-friendly website.",
-  category: "Freelance",
-  techStack: [
-    techStackList?.html,
-    techStackList?.css,
-    techStackList?.javascript
-  ],
-  features: [
-    { title: 'Responsive design across devices', icon: Smartphone },
-    { title: 'Interactive UI elements', icon: MousePointer },
-    { title: 'User-friendly navigation', icon: Compass },
-    { title: 'SEO optimized structure', icon: Search },
-    { title: 'Fast loading times', icon: BsSpeedometer },
-    { title: 'Modern UI/UX principles', icon: Layers }
-  ],
-  role: "Front-End Developer",
-  duration: "Aug 2025 – Sep 2025",
-  date: "2025-09-10",
-  media: [
-    { slug: "cover", type: "image", url: projectPariMedia },
-  ],
-  laptopMockup: true,
-  mediaType: "image",
-  src: projectPariMedia,
-  timeline: [
-    { icon: Clock, title: "TIMELINE", value: "1 month", subtitle: "Development Duration", color: "from-blue-500 to-blue-600", iconBg: "bg-blue-500", textColor: "text-blue-400", delay: 0 },
-    { icon: Calendar, title: "RELEASE DATE", value: "Sep 2025", subtitle: "Project Completion", color: "from-green-500 to-green-600", iconBg: "bg-green-500", textColor: "text-green-400", delay: 200 },
-    { icon: Star, title: "STATUS", value: "Completed", subtitle: "Current Phase", color: "from-purple-500 to-purple-600", iconBg: "bg-purple-500", textColor: "text-purple-400", delay: 400 }
-  ],
-  gitLink: "https://github.com/Manish9026/PariMedia", // optional if you have repo
-  liveUrl: "https://parimedia.co.in", // replace with live URL
-  gradient: "from-teal-500 to-blue-600",
-}
+
 ];
 
 
