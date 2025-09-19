@@ -80,7 +80,7 @@ export const SkillCard = ({ title, skills, index }) => {
 
   const Skills = () => {
   return (
-    <div className="min-h-screen bg-bodyColor p-6">
+    <div className="min-h-screen bg-bodyColor p-0 md:p-6">
       <motion.div
         className="text-center mb-16"
       >
